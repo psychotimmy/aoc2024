@@ -85,7 +85,7 @@ C         Total length between 'mul(' and ')' not greater than 7
           IF (ENDPOS.LE.7) THEN
             TSTR(1:)=STR(1:ENDPOS)
 C           Check we have a comma
-            COMMAPOS=INDEX(STR,',')
+            COMMAPOS=INDEX(TSTR,',')
             IF (COMMAPOS.NE.0) THEN
 C             Split the string into two sections
               LSTR(1:)=TSTR(1:COMMAPOS-1)
