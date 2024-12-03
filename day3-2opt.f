@@ -15,7 +15,7 @@ C
 C     DOPROCESS in common as value preserved over calls to PROCESS()
       DOPROCESS=.TRUE.
    50 CONTINUE
-C     Read each input line, convert to an array of integers
+C     Read each input line
       READ(10,FMT=10,ERR=100,END=100)STR
 C     Process the line, add its value to the total
       TOTAL=TOTAL+PROCESS(STR)
