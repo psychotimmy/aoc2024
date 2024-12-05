@@ -12,4 +12,4 @@ Day 3 - re-jigging the while loop in PROCESS() to eliminate the repeated code be
 
 Day 4 - there's a simple optimisation for part 1 as we only need to check around the 'X' cells in the grid and we also don't need to check that it's an 'X' again when we are in the PARSE() function. Revised code is day4-1opt.f and takes approximately half the execution time of my original day4-1.f. In day4-2.f the PARSE() function can be improved by removing a couple of surplus additions - see day4-2opt.f
 
-Day 5 - fairly ugly answers even for f77, but effective!
+Day 5 - fairly ugly answers even for f77, but effective! I especially enjoyed implementing a bubblesort algorithm for part 2.
