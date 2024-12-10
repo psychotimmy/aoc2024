@@ -1,4 +1,4 @@
-# Advent of Code 2024
+`# Advent of Code 2024
 
 Fortran 77 on RaspberryPi OS (Debian bookworm)
 
@@ -24,4 +24,4 @@ Day 8 - Complex numbers are very useful as grid co-ordinates today. Both parts r
 
 Day 9 - I spent far too long using the same data structure for part 1 in part 2, before realising I was never going to understand the tweaked algorithm as it was too complex. Changing the data structure for part 2 worked wonders. Part 1 = 0.003 seconds, Part 2 = 0.1s, elapsed time between getting part 1 and part 2 right = 12 hours!!
 
-I've broken two of my conventions today. First of all day10.f answers both parts (like many others, I accidentally did part 2 before doing part 1, but it was simpler to bodge the code to do a proper part 1 without disturbing what eventaully was the answer for part 2). Second - this isn't standard f77 as I've used a recursive function, permitted by Fortran90. If I get time towards the end of the month I'll redo this as an iterative solution - it shouldn't be too difficult.
+Day 10 - I've broken two of my conventions today. First of all day10.f answers both parts (like many others, I accidentally did part 2 before doing part 1, but it was simpler to bodge the code to do a proper part 1 without disturbing what eventaully was the answer for part 2). Second - this isn't standard f77 as I've used a recursive function, permitted by Fortran90. If I get time towards the end of the month I'll redo this as an iterative solution - it shouldn't be too difficult.
