@@ -1,6 +1,6 @@
 `# Advent of Code 2024
 
-Fortran 77 on RaspberryPi OS (Debian bookworm)
+Fortran 77 (mostly - some extensions and f90 style recursion used) on RaspberryPiOS (Debian bookworm)
 
 Use (with gfortran installed) f77 filename.f -o filename to compile and link.
 
