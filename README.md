@@ -34,4 +34,6 @@ Day 13 - Part 1 was done before breakfast (takes 0.04s to execute) and the exten
 
 Day 14 - Scruffy but effective code. For part 2 I managed to reduce the number of grids written to the file for visual Christmas tree searching by making a couple of wrong guesses. I'd originally assumed that the tree would be symmetrical around the central Y axis. All that talk about quadrants in part 1 misled me beautifully. Needless to say the tree isn't! In the end, exhaustive searching was my friend for this puzzle. Part 2 takes around a second to write the file to disk. I used vi to search for a bunch of contiguous X's. I enjoyed this puzzle possibly more than I should have done. Happy Christmas!
 
-Day 15 - part 1 completed fairly easily, but a different approach is required for part 2. Still trying to figure that one out!
+Day 15 - part 1 completed fairly easily, but a different approach is required for part 2. Still trying to figure that one out! There are currently 2 variants here that work on the (large) sample data but fail with my puzzle data. The code is horrendous, and I could do with re-writing it from the ground up. Something for later.
+
+Day 16 -
