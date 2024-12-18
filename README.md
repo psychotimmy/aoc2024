@@ -36,4 +36,7 @@ Day 14 - Scruffy but effective code. For part 2 I managed to reduce the number o
 
 Day 15 - part 1 completed fairly easily, but a different approach is required for part 2. Still trying to figure that one out! There are currently 2 variants here that work on the (large) sample data but fail with my puzzle data. The code is horrendous, and I could do with re-writing it from the ground up. Something for later.
 
-Day 16 -
+Day 16 - to do
+
+Day 17 - part 1 straightforward, part 2 took a lot of working out with pen and paper and currently still has my program input hardcoded, so not included in this repository for the moment.
+
