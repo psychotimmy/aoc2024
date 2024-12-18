@@ -40,3 +40,4 @@ Day 16 - to do
 
 Day 17 - part 1 straightforward, part 2 took a lot of working out with pen and paper and currently still has my program input hardcoded, so not included in this repository for the moment.
 
+Day 18 - First time implementing an A* algorithm in f77. Made lots of silly errors writing it (hence the slight surplus of loop variable names) but got there in the end. Part 2 is a simple extension and could easily be improved by either (a) searching backwards or (b) using a binary chop to more quickly land on the first case that fails. However, stepping through from 1024 blocks onwards is interesting to see the number of steps required gradually increase and then ... blam! Too slow - you can't escape now! Note - although I've used the A* algorithm it's actually Dijkstra as the heuristic is set to 0 - plenty fast enough for today's problem. But it's nice to have the more broadly useful algorithm in the bag.
