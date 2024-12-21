@@ -1,11 +1,11 @@
       PROGRAM DAY20P1
 C
-      INTEGER XSIZE,YSIZE,BSIZE
+      INTEGER XSIZE,YSIZE
       PARAMETER (XSIZE=143,YSIZE=143)
 C
-      INTEGER TARGET,GRID(0:XSIZE-1,0:YSIZE-1),X,Y,L1,L2,L3,N
+      INTEGER TARGET,GRID(0:XSIZE-1,0:YSIZE-1),L1,L2,L3,N
       INTEGER TOTAL,ASTAR,MDI,MD,CHEATMD(12),MANHATTAN,R,I
-      COMPLEX START,FINISH,ROUTE(10000),NEWROUTE(19500)
+      COMPLEX START,FINISH,ROUTE(10000)
       COMPLEX CHEAT(12),CHECK
 C
    10 FORMAT(A)
@@ -111,7 +111,6 @@ C
       INTEGER MANHATTAN
       COMPLEX MOVE(4),CHILD(4,5),CURRENT(1,5),NEXTNODE
 C
-   10 FORMAT(A)
 C     Order of move array is up,right,down,left
       MOVE(1)=COMPLEX(0,-1)
       MOVE(2)=COMPLEX(1,0)
@@ -138,7 +137,7 @@ C-----Get node with lowest f value from the open list
             CURRENT(1,3)=OPENL(PTR,3)
             CURRENT(1,4)=OPENL(PTR,4)
             CURRENT(1,5)=OPENL(PTR,5)
-            LOWFVAL=OPENL(PTR,2)
+            LOWFVAL=INT(REAL(OPENL(PTR,2)))
           ENDIF
         ENDDO
 C-------Shuffle the open list up one from PTR to OPENPTR-1
@@ -248,7 +247,6 @@ C
       INTEGER X,Y
       CHARACTER*150 ROW
    10 FORMAT(A)
-   20 FORMAT(17I1)
 C
 C     Read the grid. Convert '#' to obstacles (99999) and add
 C     a border of '#' all the way around
