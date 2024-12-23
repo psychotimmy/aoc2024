@@ -50,4 +50,4 @@ Day 21 - to do
 
 Day 22 - to do
 
-Day 23 - Part 1 isn't the most compact solution, nor the most elegant, but worked first time after I'd realised it was looking for computers that *started* with a 't', rather than *containing* a 't', which results in too high a count! Part 2 will need some refactoring and possibly recursion.
+Day 23 - Part 1 isn't the most compact solution, nor the most elegant, but worked first time after I'd realised it was looking for computers that *started* with a 't', rather than *containing* a 't', which results in too high a count! Part 2 will need some refactoring and possibly recursion, but at least part 1 avoids it and so stays true to the f77 standard.
