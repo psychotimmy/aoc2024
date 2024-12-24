@@ -48,7 +48,7 @@ Day 20 - Part 1 solution day20-1m.f is the first that completed with the correct
 
 Day 21 - to do
 
-Day 22 - to do
+Day 22 - Part 1 ... suspiciously easy.
 
 Day 23 - Part 1 isn't the most compact solution, nor the most elegant, but worked first time after I'd realised it was looking for computers that *started* with a 't', rather than *containing* a 't', which results in too high a count! Part 2 followed my hunch that as the input data had a specific shape (each computer connected to 13 others), then the maximum size of the LAN party would also be 13. Easiest way to find this out from part 1 was to work out which computers appeared most often in a triplet. This gives 13 sets of 14 computers. The password is the intersection of these sets ... the 13 computers we're looking for will appear in all 13 sets. Not an ounce of recursion needed, so a pure f77 implementation. Part 2 completes in 2.4 seconds, plenty fast enough. I reckon that general networks that don't share these characteristics would be harder to work with ... an NP complete problem space perhaps? Pleased to have reused my insertion sort from day 1 in part 2 - small victories!
 
