@@ -2,7 +2,7 @@
       INTEGER SIZE,MAXC
       PARAMETER (SIZE=3400,MAXC=16)
 C
-      INTEGER TOTAL,LL,L1,L2,COMPUTERS(SIZE,MAXC),NC,CC
+      INTEGER TOTAL,LL,L1,L2,COMPUTERS(SIZE,MAXC),NC
       INTEGER NLEFT,NRIGHT
       COMPLEX CONPAIRS(SIZE)
 C
@@ -71,7 +71,6 @@ C
       SUBROUTINE FINDSETCOUNT(COMP,NC,TARGET,TOTAL)
       INTEGER COMP(3400,16),NC,TARGET,TOTAL
       INTEGER L1,L2,L3,L4,T1,T2,T3,COUNT3
-      INTEGER*8 RESULTS(2500),TEMP
       LOGICAL STARTST
 C
       TOTAL=0
@@ -99,36 +98,7 @@ C
             ENDDO
             IF (COUNT3.EQ.TARGET) THEN
               IF (STARTST(T1).OR.STARTST(T2).OR.STARTST(T3)) THEN
-c               IF ((L1.LT.L2).AND.(L1.LT.L3)) THEN
-c                 TEMP=L1
-c                 IF (L2.LT.L3) THEN
-c                   TEMP=TEMP+(L2*1000)+(L3*1000000)
-c                 ELSE
-c                   TEMP=TEMP+(L3*1000)+(L2*1000000)
-c                 ENDIF
-c               ELSE IF ((L2.LT.L1).AND.(L2.LT.L3)) THEN
-c                 TEMP=L2
-c                 IF (L1.LT.L3) THEN
-c                   TEMP=TEMP+(L1*1000)+(L3*1000000)
-c                 ELSE
-c                   TEMP=TEMP+(L3*1000)+(L1*1000000)
-c                 ENDIF
-c               ELSE
-c                 TEMP=L3
-c                 IF (L1.LT.L2) THEN
-c                   TEMP=TEMP+(L1*1000)+(L2*1000000)
-c                 ELSE
-c                   TEMP=TEMP+(L2*1000)+(L1*1000000)
-c                 ENDIF
-c               ENDIF
-c               WRITE(*,*)TEMP
-c               DO L4=1,TOTAL
-C                 Already seen this triplet, don't count it again
-c                 IF (RESULTS(L4).EQ.TEMP) GOTO 100
-c               ENDDO
                 TOTAL=TOTAL+1
-c               RESULTS(TOTAL)=TEMP
-c 100           CONTINUE
               ENDIF
             ENDIF
           ENDDO
