@@ -54,4 +54,4 @@ Day 23 - Part 1 isn't the most compact solution, nor the most elegant, but worke
 
 Day 24 - to do
 
-Day 25 - Part 1 is a literal interpretation of what the puzzle asks for, but if I had nicer string handling capabilites in Fortran 77 then the smart thing to do is probably to compare where the # characters fall in a 2d matrix - if any clash, the lock and key combination aren't possible.
+Day 25 - Part 1 is a literal interpretation of what the puzzle asks for, but if I had nicer string handling capabilites in Fortran 77 then the smart thing to do is probably to compare where the # characters fall in a 2d matrix - if any clash, the lock and key combination aren't possible. Christmas Day is when even an exhaustive approach runs in 0.004s.
